@@ -1,0 +1,293 @@
+#menu1{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    }
+    #menu1 ul{
+        position: relative;
+        display: block;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+        list-style: none;
+        background: #ffffff;
+        }
+        #menu1 > ul::after{
+            display: block;
+            width: 100%;
+            height: 0px;
+            clear: both;
+            content: " ";
+            }
+            #menu1 ul li{
+                position: relative;
+                display: block;
+                float: left;
+                width: auto;
+                height: auto;
+                }
+                #menu1 ul li a{
+                    display: block;
+                    padding: 9px 25px 0px 25px;
+                    font-size: 14px;
+                    line-height: 1.3em;
+                    text-decoration: none;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    height: 36px;
+                    box-sizing: border-box;
+                    color: rgb(0, 0, 0);
+                    margin-left: 150px;
+                    border-left: black solid;
+                    }
+                    #menu1 ul li ul{
+                        position: absolute;
+                        top: 36px;
+                        left: 0px;
+                        display: none;
+                        width: 200px;
+                        background: rgba(0, 255, 255, 0.808);
+                        }
+                        #menu1 ul li:hover ul{
+                            display: block;
+                            }
+                        #menu1 ul li ul li{
+                        float: none;
+                        width: 100%;
+
+                        }
+
+                           #menu1 ul li ul li a{
+                           display: block;
+                           text-transform: none;
+                           height: auto;
+                           padding: 7px 25px;
+                           width: 100%;
+                           box-sizing: border-box;
+                           border-top: 1px solid #ffffff;
+                           color: rgb(255, 255, 255);
+                           }
+                           #menu1 ul li ul li:first-child a{
+                            border-top: 0px;
+                            }
+
+                            #menu2{
+                                position: relative;
+                                display: block;
+                                width: 100px;
+                                height: 1960px;
+                                z-index: 10;
+                                }
+                            #menu2 ul{
+                                position: relative;
+                                display: block;
+                                margin: 0px;
+                                padding: 0px;
+                                width: 150px;
+                                height: 100%;
+                                list-style: none;
+                                background: #38b6ff;
+                                }
+                            #menu2 > ul::after{
+                                display: block;
+                                width: 100%;
+                                height: 0px;
+                                clear: both;
+                                content: " ";
+                                }
+                                #menu2 ul li a{
+                                    display: block;
+                                    padding: 9px 25px 0px 25px;
+                                    font-size: 14px;
+                                    line-height: 1.3em;
+                                    text-decoration: none;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    height: 36px;
+                                    box-sizing: border-box;
+                                    color: white;
+                                    }
+                                    #menu2 ul li ul{
+                                        position: absolute;
+                                        top: 190px;
+                                        left: 90px;
+                                        display: none;
+                                        width: 200px;
+                                        background: rgba(0, 255, 255, 0.808);
+                                        height: 300px;
+                                        }
+                                        #menu2 ul li:hover ul{
+                                            display: block;
+                                            }
+                                        #menu2 ul li ul li{
+                                        float: none;
+                                        width: 100%;
+                                        }
+                                        #menu2 ul li ul li a{
+                                           display: block;
+                                           text-transform: none;
+                                           height: auto;
+                                           padding: 7px 25px;
+                                           width: 100%;
+                                           box-sizing: border-box;
+                                           border-top: 1px solid #ffffff;
+                                           color: rgb(255, 255, 255);
+                                           }
+                                           #menu2 ul li ul li:first-child a{
+                                            border-top: 0px;
+                                            }                           
+                            header{
+                            background-color: rgb(55, 175, 245);
+                            height: 35px;
+                           }
+                            main{
+                             background-image: url(https://i.artfile.ru/3950x2628_645797_[www.ArtFile.ru].jpg);
+                             height: 2000px;
+                             width: 100%; 
+                             font-family: "Inter", sans-serif;
+                             font-size: 21px;
+                             background-size: auto;
+                            }
+                            footer{
+                                background-color: cyan;
+                            }
+                            .privet{
+                                border: 10px rgba(172, 255, 47, 0.815) solid;
+                                border-radius: 5px;
+                                background-color: rgba(3, 184, 184, 0.541);
+                                margin-top: -1950px;
+                                margin-left: 155px;
+                                width: auto;
+
+                            }
+                            .privet a button{
+                                width: 98%;
+                                height: 50px;
+                                margin-left: 5px;
+                                margin-bottom: 5px;
+                                font-size: 20px;
+                                background-color: rgba(0, 0, 0, 0.466);
+                                color: #ffffff;
+                                border-radius: 10px;
+                            }
+
+                            .setting{
+                                margin: 50px;
+                                border: 10px rgba(172, 255, 47, 0.815) solid;
+                                border-radius: 5px;
+                                background-color: rgba(3, 184, 184, 0.541);
+                                margin-top: -1950px;
+                                width: 500px;
+                                margin-left: 155px;
+                            }
+                            .pytivod1{
+                                border: 10px rgba(172, 255, 47, 0.815) solid;
+                                border-radius: 5px;
+                                background-color: rgba(3, 184, 184, 0.541);
+                                margin-top: -1950px;
+                                width: 500px;
+                                margin-left: 155px;
+                            }
+                            .pytivod2{
+                                border: 10px rgba(172, 255, 47, 0.815) solid;
+                                border-radius: 5px;
+                                background-color: rgba(3, 184, 184, 0.541);
+                                margin-top: 10px;
+                                width: 500px;
+                                margin-left: 155px;
+                            }
+                            .pytivod3{
+                                border: 10px rgba(172, 255, 47, 0.815) solid;
+                                border-radius: 5px;
+                                background-color: rgba(3, 184, 184, 0.541);
+                                margin-top: 10px;
+                                width: 500px;
+                                margin-left: 155px;
+                            }
+                            .pytivod4{
+                                border: 10px rgba(172, 255, 47, 0.815) solid;
+                                border-radius: 5px;
+                                background-color: rgba(3, 184, 184, 0.541);
+                                margin-top: 10px;
+                                width: 500px;
+                                margin-left: 155px;
+                            }
+                            .info{
+                                margin: 50px;
+                                border: 10px rgba(172, 255, 47, 0.815) solid;
+                                border-radius: 5px;
+                                background-color: rgba(3, 184, 184, 0.541);
+                            }
+                            .game{
+                                margin: 50px;
+                                border: 10px rgba(172, 255, 47, 0.815) solid;
+                                border-radius: 5px;
+                                background-color: rgba(3, 184, 184, 0.541);
+                                margin-top: 10px;
+                                margin-left: 155px;
+                            }
+                            .down{
+                                margin: 50px;
+                                border: 10px rgba(172, 255, 47, 0.815) solid;
+                                border-radius: 5px;
+                                background-color: rgba(3, 184, 184, 0.541);
+                                margin-top: -1900px;
+                                margin-left: 155px;
+                            }
+                            .games{
+                                background-color: rgba(0, 255, 255, 0.493);
+                                margin-left: 155px;
+                                margin-top: 10px;
+                            }
+                            .title{
+                                width: 600px;
+                                border: 10px rgba(172, 255, 47, 0.815) solid;
+                                border-radius: 5px;
+                                background-color: rgba(3, 184, 184, 0.541);
+                                margin-top: -1900px;
+                                margin-left: 155px;
+                            }
+                            header a img{
+                                border-radius: 5px;
+                            }
+                            .dowloand table{
+                                margin: 10px;
+                                border: 10px rgba(172, 255, 47, 0.815) solid;
+                                border-radius: 5px;
+                                background-color: rgba(3, 184, 184, 0.541);
+                                margin-left: 155px;
+                            }
+                            .dowloand table tbody tr td a button{
+                                width: auto;
+                                height: 50px;
+                                margin-left: 5px;
+                                margin-bottom: 5px;
+                                font-size: 20px;
+                                background-color: rgba(0, 0, 0, 0.466);
+                                color: #ffffff;
+                                border-radius: 10px;
+                                font-size: 14px;
+                            }
+                            .games table tbody tr td a button{
+                                width: auto;
+                                height: 50px;
+                                margin-left: 5px;
+                                margin-bottom: 5px;
+                                font-size: 20px;
+                                background-color: rgba(0, 0, 0, 0.466);
+                                color: #ffffff;
+                                border-radius: 10px;
+                                font-size: 14px;
+                            }
+                            .update{
+                                margin: 50px;
+                                border: 10px rgba(172, 255, 47, 0.815) solid;
+                                border-radius: 5px;
+                                background-color: rgba(3, 184, 184, 0.541);
+                                margin-top: 5%;
+                                width: 600px;
+                                margin-left: 155px;
+                            }
