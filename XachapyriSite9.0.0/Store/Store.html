@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сухой Хачапури сайт</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/mobi.css">
+    <style>
+      body{
+        background-color: rgb(0, 0, 112);
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+  <button class="menu" id="btn_open">Меню</button>
+    <div class="Phone_menu" id="mobi_menu" style="display: none;">
+        <ul>
+            <li><a href="../home.html"><img src="../img/logo.png" alt=""></a></li>
+            <li><a href="../home.html#about" class="startbtn">О студии</a></li>
+            <li><a href="../home.html#netw">Соц.сети</a></li>
+            <li><a href="../home.html#games_net">Наши игры</a></li>
+            <li><a href="../Store/Store.html">Хачапури dev Store</a></li>
+            <li><a href="../home.html#update">Обновление</a></li>
+        </ul>
+    </div>
+    <div class="head" id="intop">
+        <ul>
+            <li><a href="../home.html"><img src="../img/logo.png" alt=""></a></li>
+            <li><a href="../home.html">О студии</a></li>
+            <li><a href="../home.html">Соц.сети</a></li>
+            <li><a href="../home.html#games_net">Наши игры</a></li>
+            <li><a href="../Store/Store.html">Хачапури dev Store</a></li>
+            <li><a href="../home.html#update">Обновление</a></li>
+        </ul>
+    </div>
+    <div class="warning" style="background-color: red; color: white; text-align: center; font-size: 18px; font-weight: bold;">Внимание!!!<br>На месте этой страници была станица с загрузкой игр от Хачапури dev, и на месте старой страници теперь страница для скачивания оффициального магазина приложений и игр. Теперь всё там.</div>
+    <div style="text-align: center; color: white; font-weight: bold; font-size: 24px;">Хачапури dev Store</div>
+    <div class="root">
+      <div class="scroll_content">
+        <div class="scroll_box_media">
+          <style>
+            .scroll_box_media img{
+              height: 200px;
+            }
+            .scroll_box_media{
+              height: 400px;
+              width: 350px;
+              overflow: hidden;
+              overflow-y: auto;
+            }
+          </style>
+          <img src="img1.png" alt="media">
+          <img src="apper2.png" alt="media">
+          <img src="apper3.png" alt="media">
+          <img src="apper4.png" alt="media">
+          <img src="apper5.png" alt="media">
+        </div>
+        <div class="scroll_box_info">
+          <div class="scroll_content">
+            <div class="content">
+              <style>
+                .tag{
+                  background-color: rgb(0, 89, 255);
+                  width: 180px;
+                  border: 5px white solid;
+                  border-radius: 10px;
+                  text-align: center;
+                  margin-top: 10px;
+                }
+                .content{
+                  color: white;
+                }
+                .content button{
+                  background-color: rgb(0, 81, 255);
+                  border: 0px;
+                  border-radius: 10px;
+                  width: 100%;
+                  font-size: 18px;
+                  color: white;
+                  font-weight: bold;
+                  cursor: pointer;
+                }
+                .scroll_box_info{
+                  max-width: 200px;
+                  max-height: 400px;
+                  position: absolute;
+                  margin-left: 380px;
+                  margin-top: -400px;
+                  overflow: hidden;
+                  overflow: scroll;
+                  overflow-x: hidden;
+                }
+                
+              </style>
+              <h1>Хачапури dev Store</h1>
+              <div class="tag">Программное обепечение</div>
+              <div class="tag">Магазин приложений</div>
+              <p>Описание: Скачивай игры и приложения в магазине приложениий "Хачапури dev"</p>
+              <p>OC: Windows</p>
+              <p>Дата создания: 05.01.25</p>
+              <p>Дата опубликования: 08.03.25</p>
+              <a href=""><button>Скачать</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        .System{
+          color: white;
+          text-align: center;
+        }
+        .updates{
+          color: white;
+        }
+      </style>
+      <div class="System">
+        <h1>Системные требования:</h1>
+        <p>.NET framework: 4.6.5 или выше</p>
+        <p>Процессор: х64</p>
+      </div>
+      <div class="updates">
+        <h1>Обновления:</h1>
+        <p>Их нету</p>
+      </div>
+    </div>
+    <script>
+        $("#btn_open").click(function() {
+            $("#mobi_menu").toggle();
+        });
+    </script>
+</body>
+</html>

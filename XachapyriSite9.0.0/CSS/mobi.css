@@ -1,0 +1,19 @@
+@media screen and (max-width: 800px) {
+    .head{
+        opacity: 0;
+        display: none;
+        visibility: hidden;
+    }
+    .img img{
+        margin-top: -50px;
+    }
+    .info{
+        text-align: center;
+    }
+    .main button{
+        visibility: visible;
+    }
+    .menu{
+        visibility: visible;
+    }
+}
