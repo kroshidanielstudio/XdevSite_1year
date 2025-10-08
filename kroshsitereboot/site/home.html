@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сухой Хачапури сайт</title>
+    <link rel="stylesheet" href="vk.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+<script src="https://apis.google.com/js/platform.js"></script>
+<link rel="icon" href="img/загруженное.jpg">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+  header p{
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+  }
+  .open_spr{
+    background: linear-gradient( to left top, rgb(225, 0, 255), rgb(133, 66, 219), rgb(255, 208, 0));
+    width: 80;
+    height: 50;
+    font-size: 20px;
+    font-weight: bold;
+    border: #000000;
+    border-radius: 5px;
+}
+table{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+}
+@keyframes cbtn{
+    10%{
+        border-radius: 20px;
+    }
+}
+.open_spr:hover{
+    animation: cbtn 2s;
+}
+.about_site{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.308);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+
+}
+.about_site_box{
+    max-width: 500px;
+    padding: 45px;
+    z-index: 1;
+    background-color: white;
+    margin: 30px 15px;
+    transform: scale(0);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    transition: transform .8s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.about_site .openn{
+    visibility: visible;
+    opacity: 1;
+}
+.about_site.openn .about_site__box{
+    transform: scale(1);
+}
+.about-site__close-btn{
+    border: none;
+    padding: 10px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: transparent;
+    cursor: pointer;
+    background-color: red;
+}
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .autoplay-progress {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      z-index: 10;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: var(--swiper-theme-color);
+    }
+
+    .autoplay-progress svg {
+      --progress: 0;
+      position: absolute;
+      left: 0;
+      top: 0px;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      stroke-width: 4px;
+      stroke: var(--swiper-theme-color);
+      fill: none;
+      stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+      stroke-dasharray: 125.6;
+      transform: rotate(-90deg);
+    }
+  </style>
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+<script type="text/javascript">
+  VK.init({ apiId: 0, onlyWidgets: true });
+</script>
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+</head>
+<body>
+  <div class="mask">
+    <div class="loader"></div>
+</div>
+    <header>
+      <nav id="menu1">
+        <ul>
+          <li><a href="#">Ещё</a>
+          <ul>
+                <li><a href="video.html">Видео</a></li>
+                <li><a id="open-update-btn">Обновления</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Ссылки</a>
+            <ul>
+                    <div class="youtube">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 100px;">
+                        <path d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24Z" fill="#FF0000"/>
+                        <path d="M36.265 18.0732C35.9706 16.9422 35.1031 16.0516 34.0016 15.7493C32.0054 15.2 24 15.2 24 15.2C24 15.2 15.9946 15.2 13.9983 15.7493C12.8967 16.0516 12.0292 16.9422 11.7348 18.0732C11.2 20.1231 11.2 24.4 11.2 24.4C11.2 24.4 11.2 28.6768 11.7348 30.7268C12.0292 31.8578 12.8967 32.7484 13.9983 33.0508C15.9946 33.6 24 33.6 24 33.6C24 33.6 32.0054 33.6 34.0016 33.0508C35.1031 32.7484 35.9706 31.8578 36.265 30.7268C36.8 28.6768 36.8 24.4 36.8 24.4C36.8 24.4 36.8 20.1231 36.265 18.0732" fill="white"/>
+                        <path d="M21.6 28.8V20.8L28 24.8001L21.6 28.8Z" fill="#FF0000"/>
+                        </svg>
+                        <li><a href="https://www.youtube.com/channel/UCl3GurVAf50tjKHYvQwvtsA">Канал на ютуб:Сухой Хачапури</a></li>
+                     <li><a href="https://www.youtube.com/channel/UCIKuu15UZMtqTZL2uZ_MbPg">Канал на ютуб:Сухой Хачапури game studio</a></li>
+                     </div>   
+                     <div class="pl" style="float: left;">
+                        <img src="img/pl.jpg" style="border-radius: 50%; margin-left: 100px;" height="45px" width="45" alt="playerok icon">
+                         <li><a href="https://playerok.com/profile/kroshidanielshop/products" style="margin-left: 25px;">Магазин на Playerok</a></li>
+                     </div>
+                     <div class="tw" style="float: left;">
+                     <img src="img/twitch_icon_146123.svg" style="margin-left: 100px;" height="45" width="45" alt="twitch icon">
+                     <li><a href="https://www.twitch.tv/kroshdanielyt" style="margin-left: 35px;">Твич: kroshdaniel</a></li></div>
+                     <div class="ds" style="float: left;">
+                     <img src="img/discord_101785.svg" height="45" width="45" alt="discord icon" style="margin-left: 100px;">
+                     <li><a href="https://discord.com/invite/G5UVCAwK3Q" style="margin-left: 40px;">Дискорд сервер</a></li></div>
+                     <div class="vkicon" style="float: left;">
+                     <img src="img/vk.svg" style="background-color: white; border-radius: 70%; margin-left: 100px;" height="45" width="45" alt="">
+                     <li><a href="https://vk.com/kroshidanielyoutube" style="margin-left: 45px;">Страница в VK</a></li></div>
+                    <div id="vk_subscribe" style="margin-left: 28px;"></div>
+                      <script type="text/javascript">
+                        VK.Widgets.Subscribe("vk_subscribe", {}, 625277461);
+                      </script>
+                    </ul>
+                      <li><a href="home.html">На главную</a></li>            
+            </li>
+          </ul>
+    </nav>
+    </header>
+    <main>
+      <div class="welcom">
+      <h1>Добро пожаловать</h1>
+      </div>
+      <div class="home">
+        <img src="img/spin.gif" height="300px" width="100%" alt="" style="z-index: 50;">
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        <div class="autoplay-progress">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
+          <span></span>
+        </div>
+      </div>
+    
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+          },
+          on: {
+            autoplayTimeLeft(s, time, progress) {
+              progressCircle.style.setProperty("--progress", 1 - progress);
+              progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+            }
+          }
+        });
+      </script>
+      <div class="modal" id="my-modal">
+        <div class="modal__box">
+         <button id="close-my-modal-btn" class="modal__close-btn">X</button>
+         <h2>Почему я вижу экран загрузки?</h2>
+         <p>Во время загрузки, сайт подгружает данные<br>
+         и чем больше объектов на сайте тем и дольше<br>
+         будет загружаться</p>
+         <h3>А зачем она нужна?</h3>
+         <p>Она нужна для скрытия элементов которые<br>
+         подгружаются</p>
+         <h3>А где больше загружается?</h3>
+         <p>На сайтах где есть элементы из других источников<br>
+         а именно видео, фото, фреймы</p>
+        </div>
+     </div>
+     <div class="update" id="my-update">
+      <div class="update__box">
+      <button class="update__close-btn" id="close-my-update-btn">X</button>
+      <h1>Update 2.2.2 beta 3</h1>
+      <p><h3>Добавлено:</h3><br>
+      -Рыба на главной<br>
+      -Теперь меню закремлено на экране<br></p>
+      <h3>Изменино:</h3>
+      <p>-Полная ремодель дизайна сайта<br>
+      -Ссылки рапеделены на группы</p>
+      <h3>Удалено</h3>
+      <p>-Страници мини игры, downloader и много чего<br>
+      - На момент замедления ютуба загрузка была убрана с Страници "Видео"</p>
+      <h3>Исправлено</h3>
+      <p>Нечего</p>
+      </div>
+</div>
+  <div class="help">
+    <h2>Помощь</h2>
+    <h3>Почему я вижу экран загрузки?</h3>
+    <button id="open-modal-btn" class="open_spr">Открыть справку</button>
+
+  <div class="modal" id="my-modal">
+     <div class="modal__box">
+      <button id="close-my-modal-btn" class="modal__close-btn">X</button>
+      <h2>Почему я вижу экран загрузки?</h2>
+      <p>Во время загрузки, сайт подгружает данные<br>
+      и чем больше объектов на сайте тем и дольше<br>
+      будет загружаться</p>
+      <h3>А зачем она нужна?</h3>
+      <p>Она нужна для скрытия элементов которые<br>
+      подгружаются</p>
+      <h3>А где больше загружается?</h3>
+      <p>На сайтах где есть элементы из других источников<br>
+      а именно видео, фото, фреймы</p>
+     </div>
+  </div>
+
+  </div>
+  <div class="news">
+    <h2>Новости</h2>
+    <h3>Новое обновление</h3>
+  </div>
+  <div class="games">
+    <h2>Мини игры</h2>
+    <h3>Scratch</h3>
+    <a href="simba_fly.html"><button>Флайпи симба</button></a>
+    <a href="do_novogo_goda_ostslos.html"><button>До нового года осталось</button></a>
+    <a href="calc.html"><button>Калькулятор</button></a>
+    <a href="otgadai_po_bykvam.html"><button>Отгодай по буквам</button></a>
+    <a href="dino.html"><button>Динозаврик на пк</button></a>
+    <a href="dino_mobi.html"><button>Динозаврик на телефон</button></a>
+    <h3>JavaScript</h3>
+    <a href="gonka.html"><button>Гонка</button></a>
+    <h3>Roblox</h3>
+    <a href="https://www.roblox.com/games/17105845820/unnamed"><button>Пожалуйста донатик</button></a>
+    <a href="https://www.roblox.com/games/17280516670/42"><button>Школа имени кроша РП</button></a>
+    <a href="https://www.roblox.com/games/17105845820/unnamed"><button>Пожалуйса донатик</button></a>
+    <a href="https://www.roblox.com/games/17756184934/kroshidaniel"><button>Хачапури Лагерь РП</button></a>
+  </div>
+  <div class="down">
+    <h2>Скачать файлы</h2>
+    <h3>Концепции на PowerPoint</h3>
+    <a href="Files/smeharikiwindowmobile.zip" download=""><button>Смешарики 1.0 мобайл</button></a>
+    <a href="Files/Windowssummer.zip" download=""><button>Windows summer</button></a>
+    <a href="Files/1aprillwindows.pptx" download=""><button>1 април у-индовс</button></a>
+    <h3>Minecraft PE 1.19</h3>
+    <a href="Files/mekhanicheskiy_dom_mcworld.mcworld" download=""><button>Механический дом</button></a>
+    <a href="Files/oneblock_mcworld.mcworld" download=""><button>Один блок</button></a>
+    <a href="Files/Parkur_2_mcworld.mcworld" download=""><button>Паркур 2</button></a>
+    <a href="Files/Parkur_mcworld.mcworld" download=""><button>Паркур</button></a>
+    <h3>Android games</h3>
+    <a href="Files/krosh_cliker.apk" download=""><button>Кликер</button></a>
+  </div>
+    </main>
+    <footer>
+      <a href="home.html"><img src="img/up.png" height="50"></a>
+  </footer>
+  <script src="js/loading.js"></script>
+  <script src="js/spravka.js"></script>
+  <script src="js/update.js"></script>
+  <script>
+    document.getElementById("open-modal-btn").addEventListener("click", function(){
+            document.getElementById("my-modal").classList.add("open")
+        })
+        document.getElementById("close-my-modal-btn").addEventListener("click", function(){
+            document.getElementById("my-modal").classList.remove("open")
+        })
+  </script>
+</body>
+</html>
